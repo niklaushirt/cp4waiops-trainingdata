@@ -12,5 +12,5 @@ cfd95b7e-3bc7-4006-a4a8-a73a79c71255,PodRestarts,ratings-predictive,PodRestarts,
 cfd95b7e-3bc7-4006-a4a8-a73a79c71255,TransactionsPerSecond,mysql-predictive,TransactionsPerSecond,"{'group': 'TransactionsPerSecond', 'node': 'mysql-predictive'}",6f837c30-6dbe-34ca-87b6-1f2abf7eb402
 cfd95b7e-3bc7-4006-a4a8-a73a79c71255,TransactionsPerSecond,ratings-predictive,TransactionsPerSecond,"{'group': 'TransactionsPerSecond', 'node': 'ratings-predictive'}",820087ad-0a67-3ba5-abce-c2429e7ebece
 cfd95b7e-3bc7-4006-a4a8-a73a79c71255,CPU1Temperature,DCWest1-Rack045-DELL3762,System,"{'group': 'System', 'node': 'DCWest1-Rack045-DELL3762'}",7edec544-92e7-3a88-9e69-8fda5b1c49bb
-cfd95b7e-3bc7-4006-a4a8-a73a79c71255,TransactionsPerSecond,dSwitch-1-vm-network-port-1,TransactionsPerSecond,"{'group': 'TransactionsPerSecond', 'node': 'dSwitch-1-vm-network-port-1'}",6f837c30-6dbe-34ca-87b6-1f2abf7eb499
-cfd95b7e-3bc7-4006-a4a8-a73a79c71255,TransactionsPerSecond,dcwest1-switch023,TransactionsPerSecond,"{'group': 'TransactionsPerSecond', 'node': 'dcwest1-switch023'}",6f837c30-6dbe-34ca-87b6-1f2abf7eb498
+cfd95b7e-3bc7-4006-a4a8-a73a79c71255,TransactionsPerSecond,dSwitch-1-vm-network-port-1,TransactionsPerSecond,"{'group': 'TransactionsPerSecond', 'node': 'dSwitch-1-vm-network-port-1'}",0fc7bc0d-7c8c-3e70-8091-43d3b2c5d64a
+cfd95b7e-3bc7-4006-a4a8-a73a79c71255,TransactionsPerSecond,dcwest1-switch023,TransactionsPerSecond,"{'group': 'TransactionsPerSecond', 'node': 'dcwest1-switch023'}",c73fb9e0-bdf4-3e65-b4bb-45926325c269
