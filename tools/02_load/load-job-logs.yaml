@@ -34,14 +34,15 @@ spec:
               echo "    📥 Downloading log anomaly training files"
               echo "   ------------------------------------------------------------------------------------------------------------------------------"
               export AWX_REPO=https://github.com/niklaushirt/cp4waiops-trainingdata.git
-              cd cp4waiops-trainingdata
-              git log|head -n 17
-              cd -              echo ""
+              git clone $AWX_REPO
+              echo ""
               echo ""
               echo "------------------------------------------------------------------------------------------------------------------------------"
               echo "This Repo includes those latestet Commits"
               echo "------------------------------------------------------------------------------------------------------------------------------"
+              cd cp4waiops-trainingdata
               git log|head -n 17
+              cd -
               echo ""
               echo ""
               echo "   ------------------------------------------------------------------------------------------------------------------------------"
