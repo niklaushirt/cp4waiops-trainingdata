@@ -8,19 +8,14 @@
 
 
 echo "   ***************************************************************************************************************************************"	
-echo "    🚀  Load \"$INDEX_TYPE\" Indexes for $APP_NAME"	
+echo "    🚀  Load \"$INDEX_TYPE\" Indexes"	
 echo "     "	
 
 #--------------------------------------------------------------------------------------------------------------------------------------------	
 #  Check Defaults	
 #--------------------------------------------------------------------------------------------------------------------------------------------	
 
-if [[ $APP_NAME == "" ]] ;	
-then	
-      echo "     ⚠️ AppName not defined. Launching this script directly?"	
-      echo "     ❌ Aborting..."	
-      exit 1	
-fi	
+
 
 if [[ $INDEX_TYPE == "" ]] ;	
 then	
@@ -44,7 +39,7 @@ export username=$(oc get secret $(oc get secrets | grep aiops-elastic-secret | a
 export password=$(oc get secret $(oc get secrets | grep aiops-elastic-secret | awk '!/-min/' | awk '{print $1;}') -o jsonpath="{.data.password}"| base64 --decode)	
 
 
-export WORKING_DIR_ES="./$APP_NAME/$VERSION/$INDEX_TYPE"	
+export WORKING_DIR_ES="./training-data/$VERSION/$INDEX_TYPE"	
 
 
 echo "           ✅ Credentials:               OK"	
@@ -67,7 +62,6 @@ fi
 
 
 echo ""	
-echo "           📥 App Name:                     $APP_NAME"
 echo "           🧰 Index Type:                   $INDEX_TYPE"	
 echo ""	
 echo "           🙎‍♂️ User:                         $username"	
