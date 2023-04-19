@@ -55,6 +55,9 @@ if [ ! -x "$(command -v unzip)" ]; then
 fi
 
 
+echo "   ------------------------------------------------------------------------------------------------------------------------------"
+echo "   🔎  Check for Training Files in ./training-data/$VERSION/$INDEX_TYPE/"	
+echo "   ------------------------------------------------------------------------------------------------------------------------------"
 export MERIC_FILES=$(ls -1 ./training-data/$VERSION/$INDEX_TYPE/ | grep "dt_metric_value")	
 if [[ $MERIC_FILES == "" ]] ;	
 then	
