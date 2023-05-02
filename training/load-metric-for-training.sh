@@ -61,7 +61,8 @@ echo "   -----------------------------------------------------------------------
 export CASSANDRA_PASS=$(oc get secret aiops-topology-cassandra-auth-secret -n cp4waiops -o jsonpath='{.data.password}' | base64 -d)
 export CASSANDRA_USER=$(oc get secret aiops-topology-cassandra-auth-secret -n cp4waiops -o jsonpath='{.data.username}' | base64 -d)
 
-
+echo "CASSANDRA_USER:$CASSANDRA_USER"
+echo "CASSANDRA_PASS:$CASSANDRA_PASS"
 
 
 echo "   ------------------------------------------------------------------------------------------------------------------------------"
