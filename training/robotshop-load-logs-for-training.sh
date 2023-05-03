@@ -86,7 +86,7 @@ while true; do oc port-forward  -n $WAIOPS_NAMESPACE statefulset/iaf-system-elas
 
 
 echo ""
-./training/scripts/load-es-index.sh
+./training/scripts/load-es-index-deprecated.sh
 
 
 echo "*****************************************************************************************************************************"
