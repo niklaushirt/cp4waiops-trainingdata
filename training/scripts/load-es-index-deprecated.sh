@@ -39,7 +39,7 @@ export username=$(oc get secret $(oc get secrets | grep aiops-elastic-secret | a
 export password=$(oc get secret $(oc get secrets | grep aiops-elastic-secret | awk '!/-min/' | awk '{print $1;}') -o jsonpath="{.data.password}"| base64 --decode)	
 
 
-export WORKING_DIR_ES="./training-data/$VERSION/$INDEX_TYPE"	
+export WORKING_DIR_ES="./robot-shop/$VERSION/$INDEX_TYPE"	
 
 
 echo "           ✅ Credentials:               OK"	
